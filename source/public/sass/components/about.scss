@@ -1,0 +1,20 @@
+.about {
+  font-family: Darker Grotesque;
+  max-width: 23%;
+  box-sizing: border-box;
+  text-align: right;
+  // margin: 10px;
+}
+
+.about__heading {
+  font-weight: 900;
+  font-size: 22px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 15px;
+}
+
+.about__text {
+  padding-top: 15px;
+  font-weight: 600;
+  line-height: 1.4em;
+}

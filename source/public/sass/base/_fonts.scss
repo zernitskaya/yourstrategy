@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'AbrilFatface';
+  font-family: 'Abril Fatface';
   src: url('../fonts/AbrilFatface-Regular.woff') format('woff'),
     url('../fonts/AbrilFatface-Regular.woff2') format('woff2');
   font-weight: 900;
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-  font-family: 'DarkerGrotesque';
+  font-family: 'Darker Grotesque';
   src: url('../fonts/DarkerGrotesque-Regular.woff') format('woff'),
     url('../fonts/DarkerGrotesque-Regular.woff2') format('woff2');
   font-weight: 400;
@@ -56,6 +56,15 @@
   font-family: 'DarkerGrotesque';
   src: url('../fonts/DarkerGrotesque-Bold.woff') format('woff'),
     url('../fonts/DarkerGrotesque-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'modules';
+  src: url('../fonts/modules.woff') format('woff'),
+    url('../fonts/modules.woff') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

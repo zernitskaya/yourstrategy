@@ -99,7 +99,7 @@ exports.sprite = sprite;
 
 const copyFonts = (done) => {
   gulp.src([
-    "source/public/fonts/*/*.{woff2,woff}",
+    "source/public/fonts/*",
   ], {
   })
     .pipe(gulp.dest("build/fonts"))

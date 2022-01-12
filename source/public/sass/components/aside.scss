@@ -1,0 +1,41 @@
+.aside__wrap {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddccb8;
+  box-shadow: 30vw 0px 0px 0px #ddccb8;
+  margin-top: -180px;
+  position: relative;
+  z-index: 3;
+}
+
+.aside__about-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside__wrap-heading {
+  display: flex;
+}
+
+.aside__heading {
+  font-family: 'Darker Grotesque';
+  font-weight: 900;
+  font-size: 60px;
+  width: 50%;
+}
+
+.aside__btn-wrap {
+  width: 50%;
+}
+
+.aside__btn {
+  color: #fff;
+  font-family: 'Darker Grotesque';
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #283444;
+  padding: 15px 40px;
+}
