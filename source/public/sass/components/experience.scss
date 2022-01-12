@@ -1,0 +1,35 @@
+.experience {
+  background-size: initial;
+  background-position: top center;
+  background-image: url('../img/experiens-bg.png');
+  width: 100%;
+  font-family: 'Darker Grotesque';
+  font-weight: 900;
+}
+
+.experience__wrap {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.experience__about {
+  padding: 80px 50px;
+}
+
+.experience__text {
+  text-align: right;
+  line-height: 1.4em;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.experience__headihg {
+  font-size: 18px;
+  padding-bottom: 35px;
+}
+
+.experience__wrap-image {
+  display: flex;
+  justify-content: space-between;
+}

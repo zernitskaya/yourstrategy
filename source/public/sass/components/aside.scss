@@ -14,28 +14,35 @@
 .aside__about-wrap {
   display: flex;
   justify-content: space-between;
+  padding: 50px 30px;
 }
 
 .aside__wrap-heading {
   display: flex;
+  align-items: baseline;
+  text-align: right;
 }
 
 .aside__heading {
   font-family: 'Darker Grotesque';
   font-weight: 900;
   font-size: 60px;
-  width: 50%;
+  width: 60%;
+  padding: 60px 30px;
 }
 
 .aside__btn-wrap {
-  width: 50%;
+  width: 40%;
 }
 
 .aside__btn {
   color: #fff;
+  text-align: center;
   font-family: 'Darker Grotesque';
   font-weight: 700;
   text-transform: uppercase;
   background-color: #283444;
   padding: 15px 40px;
+  width: 232px;
+  height: 68px;
 }

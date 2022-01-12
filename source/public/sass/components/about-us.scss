@@ -1,0 +1,49 @@
+.about-us {
+  width: 33%;
+  padding: 30px;
+  margin-right: 35px;
+  font-family: 'Darker Grotesque';
+}
+
+.about-us--grey {
+  background-color: #283444;
+  color: #ddccb8;
+}
+
+.about-us--brown {
+  background-color: #ddccb8;
+  color: #283444;
+}
+
+.about-us--wight {
+  padding: 50px 30px;
+  background-color: #fafafa;
+  box-shadow: 16vw 0px 0px 0px #fafafa;
+  color: #283444;
+  position: relative;
+}
+
+.about-us__heading {
+  font-weight: 900;
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+
+.about-us__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4em;
+  text-align: right;
+}
+
+.about-us__heading--big {
+  font-weight: 900;
+  font-size: 130px;
+  padding-bottom: 20px;
+}
+
+.about-us__img--absolute {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}

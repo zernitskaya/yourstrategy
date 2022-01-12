@@ -1,0 +1,17 @@
+.team {
+  background-size: initial;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url('../img/team-bg.png');
+  width: 100%;
+}
+
+.team__wrap {
+  display: flex;
+  margin: 0 auto;
+  width: 55%;
+  // max-width: 1080px;
+}
+
+
+
