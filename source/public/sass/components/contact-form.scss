@@ -6,8 +6,7 @@
 }
 
 .contact-form__wrap {
-  margin: 0 auto;
-  max-width: 1080px;
+  @include content;
   padding: 100px 0;
 }
 

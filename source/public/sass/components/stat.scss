@@ -16,12 +16,12 @@
 }
 
 .stat__bg-2 {
+  @include content;
+
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  max-width: 1080px;
   height: 400px;
   background-image: url('../img/second-bg.png');
 
@@ -31,10 +31,9 @@
 }
 
 .stat__wrap {
+  @include content;
   position: relative;
   z-index: 1;
-  max-width: 1080px;
-  margin: 0 auto;
   padding: 80px 0;
 }
 
@@ -45,4 +44,89 @@
   color: #333;
   margin-bottom: 37px;
   font-weight: 400;
+}
+
+.stat__ban {
+  position: relative;
+  padding-top: 27px;
+  background-image: linear-gradient(
+    167deg ,rgba(221,204,184,0.65) 0%,rgba(221,204,184,0.9) 100%);
+}
+
+.stat__ban-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 630px;
+  background-image: url('../img/financial-advisor-background.png');
+
+  * {
+    background-position: top!important;
+  }
+}
+
+.stat__desc,
+.stat__count {
+  position: relative;
+  z-index: 1;
+}
+
+.stat__count {
+  display: flex;
+}
+
+.stat__list {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 57.8%;
+  margin-right: 5.5%;
+  text-align: center;
+}
+
+.stat__img-wrap {
+  width: 100%;
+}
+
+.stat__img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0px 50px 85px -30px rgba(0, 0, 0,  .3);
+}
+
+.stat__desc {
+  background-image: url('../img/financial-advisor-02.png'),
+    linear-gradient(180deg,rgba(221,204,184,0.9) 0%,rgba(221,204,184,0.9) 100%);
+  padding: 27px 74px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+
+.stat__list-item {
+  margin-bottom: 4.758%;
+}
+
+.stat__number {
+  margin-bottom: 20px;
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 500;
+  color: #283444;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.stat__text {
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.stat__btn {
+  display: flex;
+  justify-content: center;
+  padding: 27px 0;
 }
