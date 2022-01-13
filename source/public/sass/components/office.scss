@@ -39,6 +39,10 @@
   line-height: 1.15em;
   text-align: right;
   color: #fff;
+
+  @include media-exsm {
+    font-size: 10vw;
+  }
 }
 
 .office__btn {
@@ -54,4 +58,10 @@
   text-transform: uppercase;
   background-color: #ddccb8;
   padding: 15px 40px;
+  margin-top: 20px;
+
+  @include media-exsm  {
+   width: 183px;
+   font-size: 16px;
+  }
 }

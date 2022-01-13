@@ -1,14 +1,151 @@
 .main-form {
-  width: 80%;
-  max-width: 1080px;
-  margin: auto;
+  @include content;
+  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #333;
 }
 
 .main-form__wrap {
   display: flex;
+  padding-bottom: 100px;
+
+  @include media-exsm  {
+    flex-wrap: wrap;
+  }
+}
+
+.main-form__form-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #283444;
+  padding: 50px;
+
+  @include media-exsm  {
+    padding: 20px;
+  }
+}
+
+.main-form__input {
+  height: 57px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  color: #666;
+  padding: 10px;
+}
+
+.main-form__input:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.main-form__input:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+.main-form__img-back {
+  background-image: url('../img/financial-advisor.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main-form__img-wrap {
+  position: relative;
+}
+
+.main-form__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.main-form__left {
+  margin-right: 25px;
+  margin-top: 60px;
+  width: 50%;
+
+  @include media-exsm  {
+    margin-right: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
 }
 
 .main-form__right {
-  background-image: url('../img/financial-advisor.png');
-  
+  margin-left: 25px;
+  margin-top: 150px;
+  width: 50%;
+
+  @include media-exsm  {
+    margin-top: 70px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.main-form__left-heading {
+  font-weight: 900;
+  font-size: 60px;
+  padding-bottom: 30px;
+  line-height: 1em;
+
+  @include media-md  {
+    font-size: 40px;
+  }
+
+  @include media-exsm  {
+    font-size: 30px;
+  }
+}
+
+.main-form__right-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2em;
+  padding-bottom: 30px;
+
+  @include media-md  {
+    font-size: 30px;
+  }
+
+  @include media-exsm  {
+    font-size: 24px;
+  }
+}
+
+.main-form__input-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.main-form__input-text {
+  color: #666;
+  padding-right: 5px;
+}
+
+.main-form__input-btn {
+  width: 125px;
+  height: 68px;
+  background-color: #ddccb8;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form__input-small-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-form__input--small {
+  width: 50px;
 }

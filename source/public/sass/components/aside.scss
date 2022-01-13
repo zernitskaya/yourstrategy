@@ -8,7 +8,12 @@
   margin-top: -126px;
   position: relative;
   z-index: 3;
+
+  @include media-exsm  {
+   margin-top: 50px;
+  }
 }
+
 
 .aside__about-wrap {
   display: flex;
