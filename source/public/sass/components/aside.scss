@@ -1,7 +1,6 @@
 .aside__wrap {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1080px;
+  @include content;
+
   display: flex;
   flex-direction: column;
   background-color: #ddccb8;
@@ -43,7 +42,7 @@
   text-transform: uppercase;
   background-color: #283444;
   padding: 15px 40px;
-  width: 252px;
+  min-width: 252px;
   height: 68px;
   font-size: 20px;
 }

@@ -110,7 +110,7 @@ exports.copyFonts = copyFonts;
 
 const copyPlugin = (done) => {
   gulp.src([
-    "source/public/plugins/**/*",
+    "source/public/plugins/*",
   ], {
   })
     .pipe(gulp.dest("build/plugins/"))

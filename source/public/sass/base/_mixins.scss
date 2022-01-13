@@ -74,7 +74,7 @@
 }
 
 @mixin content {
-  max-width: 1060px;
-  padding: 0 24px;
   margin: 0 auto;
+  max-width: 1080px;
+  width: 80%;
 }
