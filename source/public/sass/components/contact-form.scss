@@ -8,6 +8,10 @@
 .contact-form__wrap {
   @include content;
   padding: 100px 0;
+
+  @include media-exsm {
+   padding: 50px 0;
+  }
 }
 
 .contact-form__text {
@@ -18,6 +22,10 @@
 
 .contact-form__form {
   display: flex;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
 }
 
 .contact-form__input {

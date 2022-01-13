@@ -22,6 +22,10 @@
   height: inherit;
   padding: 0 35px;
   background-color: #fff;
+
+  @include media-exsm {
+    position: static;
+  }
 }
 
 .header__logo-wrap {

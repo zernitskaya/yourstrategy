@@ -9,4 +9,9 @@
 .team__wrap {
   display: flex;
   @include content;
+
+  @include media-xl {
+    flex-direction: column;
+    align-items: center;
+  }
 }

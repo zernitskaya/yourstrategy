@@ -3,6 +3,15 @@
   max-width: 23%;
   box-sizing: border-box;
   text-align: right;
+
+
+  @include media-xl {
+    max-width: 50%;
+  }
+
+  @include media-exsm {
+    max-width: 100%;
+  }
 }
 
 .about__heading {

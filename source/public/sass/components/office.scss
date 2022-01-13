@@ -29,6 +29,10 @@
   padding-bottom: 12vw;
   position: relative;
   z-index: 3;
+
+  @include media-exsm {
+
+  }
 }
 
 .office__heading {
@@ -39,6 +43,10 @@
   line-height: 1.15em;
   text-align: right;
   color: #fff;
+
+  @include media-xl {
+    font-size: 10vw;
+  }
 
   @include media-exsm {
     font-size: 10vw;
@@ -63,5 +71,7 @@
   @include media-exsm  {
    width: 183px;
    font-size: 16px;
+   margin-top: 40px;
+   padding: 5px 20px;
   }
 }

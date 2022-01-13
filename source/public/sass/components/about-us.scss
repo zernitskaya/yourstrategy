@@ -2,7 +2,12 @@
   width: 33%;
   padding: 30px;
   margin-right: 35px;
-  font-family: 'Darker Grotesque';
+
+  @include media-xl {
+    width: 100%;
+    margin: 15px 0;
+    padding: 30px 20px;
+  }
 }
 
 .about-us--grey {
@@ -27,6 +32,12 @@
   font-weight: 900;
   font-size: 36px;
   padding-bottom: 50px;
+
+  @include media-exsm {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
 }
 
 .about-us__text {
@@ -37,13 +48,23 @@
 }
 
 .about-us__heading--big {
+  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
   font-weight: 900;
   font-size: 130px;
   padding-bottom: 20px;
+  line-height: 1em;
+
+  @include media-exsm {
+   font-size: 80px;
+  }
 }
 
 .about-us__img--absolute {
   position: absolute;
   top: -50px;
   right: -50px;
+
+  @include media-exsm {
+    right: -37px;
+  }
 }
