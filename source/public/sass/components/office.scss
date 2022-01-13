@@ -13,6 +13,10 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+
+  * {
+    background-position: top!important;
+  }
 }
 
 .office__heading-wrap {
@@ -34,9 +38,14 @@
   letter-spacing: 2px;
   line-height: 1.15em;
   text-align: right;
+  color: #fff;
 }
 
 .office__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
   margin: 0 auto;
   font-family: 'Darker Grotesque';
   letter-spacing: 2px;

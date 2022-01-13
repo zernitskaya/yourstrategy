@@ -1,0 +1,48 @@
+.stat {
+  position: relative;
+}
+
+.stat__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/financial-advisor-39.jpg');
+
+  * {
+    background-position: top!important;
+  }
+}
+
+.stat__bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1080px;
+  height: 400px;
+  background-image: url('../img/second-bg.png');
+
+  * {
+    background-position: top!important;
+  }
+}
+
+.stat__wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.stat__title {
+  font-size: 50px;
+  line-height: 1.2em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 37px;
+  font-weight: 400;
+}
