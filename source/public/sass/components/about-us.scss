@@ -47,8 +47,15 @@
   text-align: right;
 }
 
+.about-us__text--big {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: $second-font;
+}
+
 .about-us__heading--big {
-  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
+  font-family: $second-font;
   font-weight: 900;
   font-size: 130px;
   padding-bottom: 20px;
@@ -65,6 +72,6 @@
   right: -50px;
 
   @include media-exsm {
-    right: -37px;
+    right: 0;
   }
 }

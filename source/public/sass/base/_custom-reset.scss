@@ -243,43 +243,19 @@ select::-ms-expand {
 }
 
 ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 1;
-  transition: opacity .3s;
+  color: #999;
 }
 
 ::-moz-placeholder {
-  color: inherit;
-  opacity: 1;
-  transition: opacity .3s;
+  color: #999;
 }
 
 :-moz-placeholder {
-  color: inherit;
-  opacity: 1;
-  transition: opacity .3s;
+  color: #999;
 }
 
 :-ms-input-placeholder {
-  color: inherit;
-  opacity: 1;
-  transition: opacity .3s;
-}
-
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-:focus::-moz-placeholder {
-  opacity: 0;
-}
-
-:focus:-moz-placeholder {
-  opacity: 0;
-}
-
-:focus:-ms-input-placeholder {
-  opacity: 0;
+  color: #999;
 }
 
 svg {

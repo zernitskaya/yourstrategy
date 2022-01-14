@@ -1,17 +1,7 @@
 .about {
-  font-family: 'Darker Grotesque';
-  max-width: 23%;
+  font-family: $second-font;
   box-sizing: border-box;
   text-align: right;
-
-
-  @include media-xl {
-    max-width: 50%;
-  }
-
-  @include media-exsm {
-    max-width: 100%;
-  }
 }
 
 .about__heading {

@@ -3,7 +3,7 @@
   background-position: top center;
   background-image: url('../img/experiens-bg.png');
   width: 100%;
-  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
+  font-family: $second-font;
   font-weight: 900;
 }
 
@@ -16,6 +16,11 @@
 .experience__about {
   padding: 80px 50px;
 
+  @include media-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @include media-exsm {
     padding: 80px 0;
   }
@@ -26,6 +31,11 @@
   line-height: 1.4em;
   font-size: 40px;
   padding-bottom: 30px;
+  padding-top: 30px;
+
+  @include media-md {
+    font-size: 30px;
+  }
 
   @include media-exsm  {
     font-size: 24px;
@@ -44,21 +54,17 @@
   display: flex;
   justify-content: space-between;
 
-  @include media-xl {
+  @include media-md {
     flex-wrap: wrap;
-  }
-
-  @include media-exsm  {
-    flex-direction: column;
-    align-items: center;
   }
 }
 
 .experience__wrap-icons {
-  @include media-xl {
+  @include media-md {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
     width: 50%;
-    padding-bottom: 20px;
-    vertical-align: baseline;
   }
 
   @include media-exsm  {

@@ -12,20 +12,23 @@
   @include media-xl {
    margin-top: 50px;
   }
+
+  @include media-exsm {
+    box-shadow: none;
+  }
 }
 
-
 .aside__about-wrap {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px 30px;
+  gap: 30px;
 
-  @include media-xl {
-    flex-wrap: wrap;
+  @include media-md {
+    grid-template-columns: 1fr 1fr;
   }
 
   @include media-exsm {
-    flex-direction: column;
     padding: 50px 0 50px 30px;
   }
 }
@@ -35,17 +38,22 @@
   align-items: baseline;
   text-align: right;
 
-  @include media-exsm  {
+  @include media-md  {
     flex-wrap: wrap;
    }
 }
 
 .aside__heading {
-  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
+  font-family: $second-font;
   font-weight: 900;
   font-size: 60px;
   width: 70%;
   padding: 27px 30px;
+
+  @include media-md  {
+    width: 100%;
+    font-size: 42px;
+   }
 
   @include media-exsm {
     font-size: 30px;
@@ -61,7 +69,7 @@
 .aside__btn {
   color: #fff;
   text-align: center;
-  font-family: 'Darker Grotesque';
+  font-family: $second-font;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #283444;
@@ -69,9 +77,4 @@
   width: 252px;
   height: 68px;
   font-size: 20px;
-
-  @include media-exsm {
-    width: 209px;
-    margin-left: 20px;
-  }
 }

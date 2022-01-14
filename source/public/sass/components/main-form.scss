@@ -1,6 +1,6 @@
 .main-form {
   @include content;
-  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
+  font-family: $second-font;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.4em;
