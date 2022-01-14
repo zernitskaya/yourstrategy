@@ -22,6 +22,7 @@
   justify-content: center;
   background-color: #283444;
   padding: 50px;
+  color: #666;
 
   @include media-exsm  {
     padding: 20px;
@@ -30,18 +31,20 @@
 
 .main-form__input {
   height: 57px;
+  color: #999;
   border: 1px solid #bbb;
   background-color: #fff;
-  color: #666;
   padding: 10px;
 }
 
-.main-form__input:nth-child(1) {
+.main-form__input--first {
   margin-bottom: 20px;
 }
 
-.main-form__input:nth-child(2) {
+.main-form__input--second {
   margin-bottom: 15px;
+  // для eror
+  border: 1px solid #ff0000;
 }
 
 .main-form__img-back {
@@ -139,6 +142,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include active;
 }
 
 .main-form__input-small-wrap {
@@ -148,4 +153,19 @@
 
 .main-form__input--small {
   width: 50px;
+// для eror
+  border: 1px solid #ff0000;
+}
+
+.main-form__about {
+  font-family: Open Sans,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
+  font-weight: 500;
+  padding: 40px 0;
+}
+
+.main-form__list {
+  list-style: disc;
+  list-style-position: inside;
 }
