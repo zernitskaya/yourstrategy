@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>yourstrategy.online | استراتژی درآمد</title>
+
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./img/fav.png">
 </head>
 
 <body>
@@ -271,6 +274,10 @@
       <div class="foundation__wrap-bottom foundation__wrap-both">
         <div class="foundation__wrap-img-bottom foundation__img">
           <img src="./img/fundation.jpeg" alt="" class="foundation__img-bottom">
+
+          <div class="foundation__decor">
+            <img src="./img/rectangle-1.png" alt="figure">
+          </div>
         </div>
 
         <div class="foundation__wrap-bottom-text foundation__text">
@@ -283,8 +290,10 @@
         </div>
       </div>
     </div>
-    </div>
 
+    <div class="decor-text">
+      <p class="decor-text__item">زمان آینده</p>
+    </div>
   </section>
 
   <section class="contact-form">
@@ -293,14 +302,23 @@
         فرم کوتاه را پر کنید و ما به زودی با شما تماس خواهیم گرفت.
       </p>
 
-      <form action="" class="contact-form__form">
+      <div class="main-form__about">
+        <p class="main-form__text">
+          Пожалуйста заполните следующие поля:
+        </p>
+
+        <ul class="main-form__list">
+          <li class="main-form__item">+98</li>
+        </ul>
+      </div>
+
+      <form class="contact-form__form">
         <input type="text" class="contact-form__input" placeholder="نام">
-        <input type="text" class="contact-form__input" placeholder="+98">
+        <input type="text" class="contact-form__input error" placeholder="+98">
       </form>
 
       <div class="contact-form__btm-wrap">
         <button class="contact-form__btn">
-          <span class="contact-form__btn-arrow contact-form__btn-right"></span>
           آماده
         </button>
       </div>
@@ -316,10 +334,28 @@
   
 <button type="button" class="scroll-top"></button>
 
+<script type="text/javascript" id="et-builder-modules-script-motion-js-extra">
+  /* <![CDATA[ */
+  var et_pb_motion_elements = {
+      "desktop":[
+          {"id":".foundation__decor","start":0,"midStart":50,"midEnd":50,"end":100,"startValue":45,"midValue":0,"endValue":-45,"resolver":"rotate","module_type":"et_pb_image","trigger_start":"middle","trigger_end":"middle"},
+          {"id":".decor-text__item","start":0,"midStart":50,"midEnd":50,"end":100,"startValue":2,"midValue":0,"endValue":-2,"resolver":"translateY","module_type":"et_pb_text","trigger_start":"middle","trigger_end":"middle"}
+      ],
+      "tablet":[
+          {"id":".foundation__decor","start":0,"midStart":50,"midEnd":50,"end":100,"startValue":45,"midValue":0,"endValue":-45,"resolver":"rotate","module_type":"et_pb_image","trigger_start":"middle","trigger_end":"middle"},
+          {"id":".decor-text__item","start":0,"midStart":50,"midEnd":50,"end":100,"startValue":2,"midValue":0,"endValue":-2,"resolver":"translateY","module_type":"et_pb_text","trigger_start":"middle","trigger_end":"middle"}
+      ],
+      "phone":[
+          {"id":".foundation__decor","start":0,"midStart":50,"midEnd":50,"end":100,"startValue":45,"midValue":0,"endValue":-45,"resolver":"rotate","module_type":"et_pb_image","trigger_start":"middle","trigger_end":"middle"},
+          {"id":".decor-text__item","start":0,"midStart":50,"midEnd":50,"end":100,"startValue":0,"midValue":0,"endValue":0,"resolver":"translateY","module_type":"et_pb_text","trigger_start":"middle","trigger_end":"middle"}
+      ]};
+  /* ]]> */
+</script>
 
 <script src="./plugins/jquery.min.js"></script>
 <script src="./plugins/jarallax.min.js"></script>
 <script src="./plugins/spin.js"></script>
+<script src="./plugins/motion-effects.js"></script>
 <script src="./js/script.min.js"></script>
 
 </body>

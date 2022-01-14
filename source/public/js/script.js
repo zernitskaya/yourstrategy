@@ -71,7 +71,8 @@ jQuery(document).ready(function($){
   var show = true;
   var countbox = ".stat__list";
   $(window).on("scroll load resize", function () {
-      if (!show) return false;
+      var el = document.querySelector('.stat__number');
+      if (!show || !el) return false;
       var w_top = $(window).scrollTop();
       var e_top = $(countbox).offset().top;
       var w_height = $(window).height();

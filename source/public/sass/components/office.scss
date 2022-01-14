@@ -21,6 +21,11 @@
     background-position: center top!important;
     background-size: 123% auto!important;
   }
+
+  @include media-exsm {
+    animation: none;
+    opacity: 1;
+  }
 }
 
 .office__heading-wrap {
@@ -39,6 +44,7 @@
 
   @include media-exsm {
     animation: none;
+    opacity: 1;
   }
 }
 
