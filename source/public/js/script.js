@@ -12,6 +12,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
   var closeSearch = document.querySelector('.js-close-search');
   var seatchWrap = document.querySelector('.header__control');
   var searchInput = document.querySelector('.js-search-input');
+  var openMenu = document.querySelector('.js-open-menu');
+  var menu = document.querySelector('.js-menu');
 
   if (!header) return;
 
@@ -22,6 +24,10 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 
   closeSearch.addEventListener('click', function() {
     seatchWrap.classList.toggle('active');
+  });
+
+  openMenu.addEventListener('click', function() {
+    menu.classList.toggle('active');
   });
 
   function animHead() {

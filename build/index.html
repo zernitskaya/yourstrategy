@@ -12,29 +12,31 @@
 <body>
   <header class="header">
     <div class="header__wrap">
-      <div class="header__logo-wrap">
-        <img src="../img/header-logo.png" alt="" class="header__logo">
-      </div>
+      <div class="header__container">
+        <a class="header__logo-wrap" href="./index.html">
+          <img src="../img/header-logo.png" alt="" class="header__logo">
+        </a>
 
-      <div class="header__control">
-        <div class="header__search-wrap">
-          <form class="header__search">
-            <input class="header__search-input js-search-input" type="text" placeholder="Seatch...">
+        <div class="header__control">
+          <div class="header__search-wrap">
+            <form class="header__search">
+              <input class="header__search-input js-search-input" type="text" placeholder="Search...">
 
-            <button class="header__search-close js-close-search" type="button"></button>
-          </form>
+              <button class="header__search-close js-close-search" type="button"></button>
+            </form>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__menu js-menu">
+              <li class="header__item"><a href="./form.html" class="header__link">تماس</a></li>
+              <li class="header__item"><a href="./index.html" class="header__link">نخست صفحه</a></li>
+            </ul>
+
+            <button type="button" class="header__btn js-search-btn"></button>
+
+            <button type="button" class="header__open-menu-btn js-open-menu"></button>
+          </nav>
         </div>
-
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item"><a href="" class="header__link">تماس</a></li>
-            <li class="header__item"><a href="" class="header__link">نخست صفحه</a></li>
-          </ul>
-
-          <button type="button" class="header__btn js-search-btn"></button>
-
-          <button type="button" class="header__open-menu-btn js-open-menu"></button>
-        </nav>
       </div>
     </div>
   </header>
