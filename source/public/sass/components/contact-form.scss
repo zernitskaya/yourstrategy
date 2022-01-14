@@ -63,6 +63,8 @@
   width: 73px;
   height: 50px;
   position: relative;
+
+  @include active;
 }
 
 .contact-form__btn:hover .contact-form__btn-arrow {

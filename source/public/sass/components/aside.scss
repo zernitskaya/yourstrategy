@@ -77,4 +77,6 @@
   width: 252px;
   height: 68px;
   font-size: 20px;
+
+  @include active;
 }
