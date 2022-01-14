@@ -13,6 +13,9 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 123% auto;
+  opacity: 0;
+  animation: fade 1.5s linear forwards;
+  animation-delay: .5s;
 
   * {
     background-position: center top!important;
@@ -30,9 +33,12 @@
   padding-bottom: 12vw;
   position: relative;
   z-index: 3;
+  animation: fade 1.5s linear forwards;
+  animation-delay: .5s;
+  opacity: 0;
 
   @include media-exsm {
-
+    animation: none;
   }
 }
 
@@ -73,5 +79,11 @@
    font-size: 16px;
    margin-top: 40px;
    padding: 5px 20px;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
   }
 }
