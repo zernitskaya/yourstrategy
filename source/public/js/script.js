@@ -1,11 +1,28 @@
-jarallax(document.querySelectorAll('.jarallax'), {
-  speed: 0.7
-});
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 
+} else {
+  jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.7
+  });
+}
 
 (function() {
   var header = document.querySelector('.header');
+  var seatchBtn = document.querySelector('.js-search-btn');
+  var closeSearch = document.querySelector('.js-close-search');
+  var seatchWrap = document.querySelector('.header__control');
+  var searchInput = document.querySelector('.js-search-input');
+
   if (!header) return;
+
+  seatchBtn.addEventListener('click', function() {
+    seatchWrap.classList.toggle('active');
+    searchInput.focus();
+  });
+
+  closeSearch.addEventListener('click', function() {
+    seatchWrap.classList.toggle('active');
+  });
 
   function animHead() {
     if (window.pageYOffset > 40) {
@@ -13,6 +30,10 @@ jarallax(document.querySelectorAll('.jarallax'), {
     } else {
       header.classList.remove('header--min');
     }
+  }
+
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    return;
   }
 
   animHead();
@@ -26,12 +47,12 @@ jQuery(document).ready(function($){
   var show = true;
   var countbox = ".stat__list";
   $(window).on("scroll load resize", function () {
-      if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-      var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-      var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-      var w_height = $(window).height(); // Высота окна браузера
-      var d_height = $(document).height(); // Высота всего документа
-      var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+      if (!show) return false;
+      var w_top = $(window).scrollTop();
+      var e_top = $(countbox).offset().top;
+      var w_height = $(window).height();
+      var d_height = $(document).height();
+      var e_height = $(countbox).outerHeight();
       var text = document.querySelector('.stat__number').textContent;
       var sybmol = text[text.length-1];
       if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {

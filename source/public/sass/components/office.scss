@@ -11,11 +11,12 @@
   position: absolute;
   background-image: url('../img/second-bg.png');
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  background-position: center top;
+  background-size: 123% auto;
 
   * {
-    background-position: top!important;
+    background-position: center top!important;
+    background-size: 123% auto!important;
   }
 }
 
@@ -36,19 +37,16 @@
 }
 
 .office__heading {
-  font-family: 'Abril Fatface';
+  font-family: $brand-font;
   font-weight: 900;
   font-size: 77px;
   letter-spacing: 2px;
   line-height: 1.15em;
   text-align: right;
   color: #fff;
+  padding: 30px 0;
 
-  @include media-xl {
-    font-size: 10vw;
-  }
-
-  @include media-exsm {
+  @include media-md {
     font-size: 10vw;
   }
 }
@@ -59,14 +57,14 @@
   align-items: center;
   height: 60px;
   margin: 0 auto;
-  font-family: 'Darker Grotesque';
+  font-family: $second-font;
   letter-spacing: 2px;
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
   background-color: #ddccb8;
   padding: 15px 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 
   @include media-exsm  {
    width: 183px;

@@ -9,6 +9,8 @@
   width: 100%;
   height: 100%;
   background-image: url('../img/financial-advisor-39.jpg');
+  background-position: top;
+  background-size: cover;
 
   * {
     background-position: top!important;
@@ -24,6 +26,8 @@
   right: 0;
   height: 400px;
   background-image: url('../img/second-bg.png');
+  background-position: top;
+  background-size: cover;
 
   * {
     background-position: top!important;
@@ -44,6 +48,10 @@
   color: #333;
   margin-bottom: 37px;
   font-weight: 400;
+
+  @include media-exsm {
+    font-size: 36px;
+  }
 }
 
 .stat__ban {
@@ -60,9 +68,15 @@
   width: 100%;
   height: 630px;
   background-image: url('../img/financial-advisor-background.png');
+  background-position: top;
+  background-size: cover;
 
   * {
     background-position: top!important;
+  }
+
+  @include media-md {
+    display: none;
   }
 }
 
@@ -74,6 +88,10 @@
 
 .stat__count {
   display: flex;
+
+  @include media-md {
+    display: block;
+  }
 }
 
 .stat__list {
@@ -84,10 +102,20 @@
   width: 57.8%;
   margin-right: 5.5%;
   text-align: center;
+
+  @include media-md {
+    width: 100%;
+  }
 }
 
 .stat__img-wrap {
   width: 100%;
+
+  @include media-md {
+    max-width: 616px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 .stat__img {
@@ -104,6 +132,10 @@
   letter-spacing: 1px;
   line-height: 1.1em;
   font-weight: 400;
+
+  @include media-md {
+    padding: 27px;
+  }
 }
 
 .stat__list-item {
@@ -117,11 +149,16 @@
   font-weight: 500;
   color: #283444;
   font-family: 'Open Sans', sans-serif;
+
+  @include media-md {
+    font-size: 46px;
+  }
 }
 
 .stat__text {
   font-size: 18px;
   color: #333;
+  padding: 0 8px;
   padding-bottom: 10px;
 }
 

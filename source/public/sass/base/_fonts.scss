@@ -45,18 +45,36 @@
 
 @font-face {
   font-family: 'Darker Grotesque';
-  src: url('../fonts/DarkerGrotesque-Regular.woff') format('woff'),
-    url('../fonts/DarkerGrotesque-Regular.woff2') format('woff2');
-  font-weight: 400;
+  src: url('../fonts/DarkerGrotesque-ExtraBold.woff2') format('woff2'),
+      url('../fonts/DarkerGrotesque-ExtraBold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DarkerGrotesque';
-  src: url('../fonts/DarkerGrotesque-Bold.woff') format('woff'),
-    url('../fonts/DarkerGrotesque-Bold.woff2') format('woff2');
-  font-weight: 700;
+  font-family: 'Darker Grotesque';
+  src: url('../fonts/DarkerGrotesque-Black.woff2') format('woff2'),
+      url('../fonts/DarkerGrotesque-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('../fonts/DarkerGrotesque-SemiBold.woff2') format('woff2'),
+      url('../fonts/DarkerGrotesque-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('../fonts/DarkerGrotesque-Bold.woff2') format('woff2'),
+      url('../fonts/DarkerGrotesque-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }

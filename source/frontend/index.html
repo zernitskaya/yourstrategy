@@ -16,14 +16,26 @@
         <img src="../img/header-logo.png" alt="" class="header__logo">
       </div>
 
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__item"><a href="" class="header__link">تماس</a></li>
-          <li class="header__item"><a href="" class="header__link">نخست صفحه</a></li>
-        </ul>
+      <div class="header__control">
+        <div class="header__search-wrap">
+          <form class="header__search">
+            <input class="header__search-input js-search-input" type="text" placeholder="Seatch...">
 
-        <button class="header__btn"></button>
-      </nav>
+            <button class="header__search-close js-close-search" type="button"></button>
+          </form>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item"><a href="" class="header__link">تماس</a></li>
+            <li class="header__item"><a href="" class="header__link">نخست صفحه</a></li>
+          </ul>
+
+          <button type="button" class="header__btn js-search-btn"></button>
+
+          <button type="button" class="header__open-menu-btn js-open-menu"></button>
+        </nav>
+      </div>
     </div>
   </header>
 
