@@ -5,27 +5,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <title>form</title>
+
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./img/fav.png">
 </head>
 
 <body>
-  <div class="header">
-    <header class="header__wrap">
-      <div class="header__logo-wrap">
-        <img src="./img/header-logo.png" alt="" class="header__logo">
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__container">
+        <a class="header__logo-wrap" href="./index.html">
+          <img src="../img/header-logo.png" alt="" class="header__logo">
+        </a>
+
+        <div class="header__control">
+          <div class="header__search-wrap">
+            <form class="header__search">
+              <input class="header__search-input js-search-input" type="text" placeholder="Search...">
+
+              <button class="header__search-close js-close-search" type="button"></button>
+            </form>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__menu js-menu">
+              <li class="header__item"><a href="./form.html" class="header__link">تماس</a></li>
+              <li class="header__item"><a href="./index.html" class="header__link">نخست صفحه</a></li>
+            </ul>
+
+            <button type="button" class="header__btn js-search-btn"></button>
+
+            <button type="button" class="header__open-menu-btn js-open-menu"></button>
+          </nav>
+        </div>
       </div>
-
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__item"><a href="" class="header__link">تماس</a></li>
-          <li class="header__item"><a href="" class="header__link">نخست صفحه</a></li>
-        </ul>
-
-        <button class="header__btn"></button>
-      </nav>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <div class="contact-us">
     <div class="contact-us__wrap">
@@ -42,7 +59,7 @@
           فرم را برای مشاوره رایگان پر کنید
         </h2>
 
-        <form action="" class="main-form__form-wrap">
+        <form class="main-form__form-wrap">
           <div class="main-form__about">
             <p class="main-form__text">
               Пожалуйста заполните следующие поля:
@@ -56,7 +73,7 @@
 
           <input type="text" class="main-form__input main-form__input--first" placeholder="نام">
 
-          <input type="text" class="main-form__input main-form__input--second" placeholder="+98">
+          <input type="text" class="main-form__input main-form__input--second error" placeholder="+98">
 
           <div class="main-form__input-wrapper">
             <div class="main-form__input-small-wrap">
@@ -87,13 +104,14 @@
     </div>
   </section>
 
-
-
   <footer class="footer">
     <div class="footer__wrap">
       <p class="footer__text">© www.yourstrategy.online 2021</p>
     </div>
   </footer>
+
+  @@include('../layouts/scripts.html')
+
 </body>
 
 </html>

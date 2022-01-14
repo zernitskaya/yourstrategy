@@ -1,10 +1,13 @@
 .foundation {
+  position: relative;
   background-color: #263142;
-  font-family: 'Darker Grotesque',Helvetica,Arial,Lucida,sans-serif;
+  font-family: $second-font;
 }
 
 .foundation__wrap {
   @include content;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
 
@@ -31,8 +34,13 @@
 }
 
 .foundation__img {
+  position: relative;
+  align-self: flex-start;
   width: 47.25%;
-  margin-right: 5.5%;
+
+  &:not(:last-child) {
+    margin-right: 5.5%;
+  }
 
   @include media-md {
     width: 100%;
@@ -40,9 +48,19 @@
   }
 }
 
+.foundation__decor {
+  position: absolute;
+  left: -63px;
+  bottom: -62px;
+  z-index: 1;
+}
+
 .foundation__text{
   width: 47.25%;
-  margin-right: 5.5%;
+
+  &:not(:last-child) {
+    margin-right: 5.5%;
+  }
 
   @include media-md {
     width: 100%;
@@ -66,7 +84,7 @@
 }
 
 .foundation__wrap-img-top {
-  margin-top: -50px;
+  margin-top: -40px;
   position: relative;
   z-index: 2;
 }
@@ -77,10 +95,35 @@
   font-size: 22px;
   line-height: 1.4em;
   padding: 100px 0;
+  text-align: right;
 
-  @include media-exsm {
-    // text-align: right;
+  @include media-md {
+    padding-bottom: 50px;
   }
 }
 
 
+.decor-text {
+  position: absolute;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20vw;
+  line-height: 0.8em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #353d4c;
+
+  @include media-md {
+    position: static;
+    font-size: 64px;
+    padding-bottom: 70px;
+    transform: none;
+
+    * {
+      transform: none!important;
+    }
+  }
+}

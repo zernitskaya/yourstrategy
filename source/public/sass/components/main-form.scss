@@ -43,8 +43,6 @@
 
 .main-form__input--second {
   margin-bottom: 15px;
-  // для eror
-  border: 1px solid #ff0000;
 }
 
 .main-form__img-back {
@@ -153,8 +151,6 @@
 
 .main-form__input--small {
   width: 50px;
-// для eror
-  border: 1px solid #ff0000;
 }
 
 .main-form__about {
@@ -162,7 +158,7 @@
   font-size: 14px;
   line-height: 1.7em;
   font-weight: 500;
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 .main-form__list {
